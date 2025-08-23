@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>资产管理平台-首页</title>
+ <link rel="icon" href="https://hive.forms.usercontent.microsoft/Images/9188040d-6c67-4c5b-b112-36a304b66dad/00000000-0000-0000-0003-bffd409131bf/T0RRH45M4BJGVXSCOEE2GS5JAZ/386e9d40-41d5-440e-acdb-b375215b7188" type="image/png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'PingFang SC', 'Helvetica Neue', Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        
+        .notice-box {
+            background-color: #1e1e1e;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            border: 1px solid #333;
+        }
+        
+        h1 {
+            color: #4fc3f7;
+            font-size: 20px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .notice-text {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #bdbdbd;
+            margin-bottom: 20px;
+        }
+        
+        .qr-guide {
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+            background-color: #2d2d2d;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2px dashed #444;
+        }
+        
+        .qr-icon {
+            font-size: 60px;
+            color: #4fc3f7;
+            margin-bottom: 10px;
+        }
+        
+        .exit-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #ff5252;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 500;
+            transition: background-color 0.3s;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        
+        .exit-btn:hover {
+            background-color: #ff1744;
+        }
+        
+        .footer {
+            font-size: 12px;
+            color: #666;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            width: 100%;
+        }
+        
+        @media (max-width: 480px) {
+            .notice-box {
+                padding: 20px 15px;
+            }
+            
+            h1 {
+                font-size: 18px;
+            }
+            
+            .notice-text {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="notice-box">
+            <h1>永慕智创软件工作室（永慕科技）资产管理平台</h1>
+            <div class="notice-text">
+                本网页无法直接打开使用<br><br>
+                请使用带有扫一扫功能的APP<br>
+                扫描资产所带的二维码进行查询<br><br>
+                感谢您的配合！
+            </div>
+            
+         </div>
+        
+        <button class="exit-btn" onclick="closeWindow()">退出</button>
+        
+        <div class="footer">
+            永慕智创软件工作室（永慕科技） 版权所有 © 2025-present
+        </div>
+    </div>
+
+    <script>
+        function closeWindow() {
+            // 尝试关闭窗口
+            window.close();
+            
+            // 备选方案：返回上一页或跳转到空白页
+            // window.history.back();
+            // window.location.href = 'about:blank';
+            
+            // 移动端APP中可能需要调用特定的关闭方法
+            // 例如：if (window.Android) window.Android.closeWindow();
+        }
+        
+        // 防止页面缩放（针对iOS）
+        document.addEventListener('touchmove', function(e) {
+            if (e.scale !== 1) { e.preventDefault(); }
+        }, { passive: false });
+        
+        var lastTouchEnd = 0;
+        document.addEventListener('touchend', function(event) {
+            var now = (new Date()).getTime();
+            if (now - lastTouchEnd <= 300) {
+                event.preventDefault();
+            }
+            lastTouchEnd = now;
+        }, false);
+    </script>
+</body>
+</html>

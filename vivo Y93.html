@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>查询结果</title>
+ <link rel="icon" href="https://hive.forms.usercontent.microsoft/Images/9188040d-6c67-4c5b-b112-36a304b66dad/00000000-0000-0000-0003-bffd409131bf/T0RRH45M4BJGVXSCOEE2GS5JAZ/386e9d40-41d5-440e-acdb-b375215b7188" type="image/png">
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 900px;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #ffffff;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 28px;
+            text-shadow: 0 0 5px rgba(0, 150, 255, 0.5);
+        }
+        
+        .asset-table {
+            width: 80%;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            border-collapse: collapse;
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+        
+        .asset-table th {
+            background-color: #2d2d2d;
+            padding: 12px 15px;
+            text-align: left;
+            font-weight: bold;
+            color: #ffffff;
+            border-bottom: 1px solid #444444;
+        }
+        
+        .asset-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #333333;
+            color: #d0d0d0;
+        }
+        
+        .asset-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .image-cell {
+            width: 150px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        
+        .asset-image {
+            max-width: 120px;
+            max-height: 120px;
+            border-radius: 4px;
+            border: 1px solid #444444;
+        }
+        
+        .no-image {
+            color: #888888;
+            font-style: italic;
+        }
+        
+        .disclaimer {
+            text-align: center;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #1a1a1a;
+            border-radius: 6px;
+            border-left: 4px solid #ff5555;
+            max-width: 800px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 12px;
+            color: #888888;
+        }
+        
+        .footer a {
+            color: #55aaff;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>永慕智创软件工作室（永慕科技）资产管理平台</h1>
+        
+        <table class="asset-table">
+            <tr>
+                <th>资产名称</th>
+                <td>vivo Y93手机</td>
+                <td rowspan="8" class="image-cell">
+                    <!-- 无图填写：<img src="" alt="资产图片" class="asset-image" style="display: none;">-->
+                <img src="https://wwwstatic.vivo.com.cn/vivoportal/files/image/detail/20181025/7de3071d6fef642e076f21f1f3ec06ce.png" alt="资产图片" class="asset-image" >
+                <!-- 无图删除此注释<div class="no-image">暂无图片</div>-->
+                </td>
+            </tr>
+            <tr>
+                <th>资产类型</th>
+                <td>实物资产-智能终端设备（手机）</td>
+            </tr>
+            <tr>
+                <th>资产品牌及型号</th>
+                <td>vivo Y93全网通（V1818A）</td>
+            </tr>
+            <tr>
+                <th>颜色</th>
+                <td>星夜黑</td>
+            </tr>
+            <tr>
+                <th>录入时间</th>
+                <td>2025-08-23</td>
+            </tr>
+            <tr>
+                <th>使用部门</th>
+                <td>教育考试研究中心</td>
+            </tr>
+            <tr>
+                <th>使用人员</th>
+                <td>李柳航</td>
+            </tr>
+            <tr>
+                <th>其他补充</th>
+                <td>仅用于完成《永慕智创软件工作室（永慕科技）半对外教育服务三年（2024-2027）高质量发展计划</td>
+            </tr>
+        </table>
+        
+        <div class="disclaimer">
+            该资产为永慕智创软件工作室资产，任何个人、组织等不得在未经许可的情况下据为己有、恶意破坏等，实物资产丢失后拾取者应及时联系归还，否则需承担赔偿、法律责任，后果自负！
+        </div>
+        
+        <div class="footer">
+        <a href="mailto:YongmuTechnology@outlook.com" class="contact">YongmuTechnology@outlook.com</a><br>
+            永慕智创软件工作室 版权所有© 2025-present
+        </div>
+    </div>
+</body>
+</html>
